@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+</head>
+<body>
+    <div onmo></div>
+    <script>
+        function Birthday() {
+            var age = 0;
+            return (function (){
+                age+=1;
+                return age
+            })
+        }
+        let yassin = Birthday();
+        console.log(yassin());
+        console.log(yassin());
+        console.log(yassin());
+        console.log(yassin());
+        console.log(yassin());
+        let menna = Birthday();
+        console.log(menna());
+        console.log(menna());
+        console.log(menna());
+        console.log(menna());
+        console.log(menna());
+        console.log(yassin());
+        console.log(menna());
+
+        console.log("=====================================================");
+        var scores = [25,50,65,40,20,60,80,70,98,12,30,75,85];
+        console.log(scores.filter((score)=>{
+            return score > 50;
+        }));
+        console.log("==================================================");
+        console.log(scores.map((score) =>{
+            return score*2;
+        }));
+        console.log("==================================================");
+        console.log(`score array: ${scores}`)
+        console.log("-----------------------------------------------------------------");
+        let strs = ["Ahmed", "Amr", "Wagdy", "Mahmoud", "Yassin", "Abdelrahman", "12345687984121"];
+        console.log(strs.reduce((prev, current)=>{
+            return prev.length>current.length?prev:current
+        }))
+        console.log("--------------------------------------------------------");
+        let nom = [2,5,6,9];
+        console.log((nom.map((num) => num * num)).reduce((prev,current)=>{
+            return prev+current
+        }, 0));
+    </script>
+</body>
+</html>
